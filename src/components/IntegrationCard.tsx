@@ -1,4 +1,6 @@
+
 import React, { ReactNode } from 'react';
+
 interface IntegrationCardProps {
   title: string;
   description: string;
@@ -7,6 +9,7 @@ interface IntegrationCardProps {
   actionLabel: string;
   onAction: () => void;
 }
+
 const IntegrationCard: React.FC<IntegrationCardProps> = ({
   title,
   description,
@@ -21,7 +24,7 @@ const IntegrationCard: React.FC<IntegrationCardProps> = ({
           <div className="mr-4">{icon}</div>
           <h3 className="text-black text-sm font-semibold leading-none">{title}</h3>
         </div>
-        <p className="text-neutral-400 text-sm font-medium leading-tight mb-6">
+        <p className="text-neutral-400 text-sm font-medium leading-[20px] mb-6">
           {description}
         </p>
         <button onClick={onAction} className={`px-4 py-2 rounded-lg ${actionType === 'primary' ? 'bg-brand-primary-blue text-white' : 'bg-opacity-10 bg-brand-primary-blue text-brand-primary-blue'}`}>
@@ -30,4 +33,5 @@ const IntegrationCard: React.FC<IntegrationCardProps> = ({
       </div>
     </div>;
 };
+
 export default IntegrationCard;
