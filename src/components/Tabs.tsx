@@ -15,10 +15,10 @@ interface TabsProps {
 const Tabs: React.FC<TabsProps> = ({ items, activeTab, onTabChange }) => {
   return (
     <div className="flex border-b border-zinc-100">
-      {items.map((item) => (
+      {items.map((item, index) => (
         <div 
           key={item.id}
-          className="relative cursor-pointer px-4"
+          className={`relative cursor-pointer ${index === 0 ? 'pl-6' : 'px-4'}`}
           onClick={() => onTabChange(item.id)}
         >
           <div className="py-4">
