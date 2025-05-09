@@ -28,7 +28,6 @@ const Index = () => {
     label: 'Integrations'
   }];
   return <div className="min-h-screen bg-neutral-50">
-      <Header username="James" avatarUrl="/lovable-uploads/5657f0e0-4d6d-4e95-bde4-209ac7e1a6d5.png" />
       
       <PageTitle title="Forms" subtitle="Finn & Cross" onBack={() => console.log('Go back')} />
       
