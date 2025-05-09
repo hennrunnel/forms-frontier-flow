@@ -38,7 +38,7 @@ const Index = () => {
       />
       
       <div className="container mx-auto px-4">
-        <div className="bg-white rounded shadow-card">
+        <div className="bg-white rounded shadow-card max-w-[992px] mx-auto">
           <Tabs 
             items={tabs} 
             activeTab={activeTab} 
