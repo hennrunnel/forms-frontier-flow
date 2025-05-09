@@ -19,7 +19,7 @@ const IntegrationCard: React.FC<IntegrationCardProps> = ({
   onAction
 }) => {
   return (
-    <div className="w-64 h-60 bg-neutral-50 rounded shadow-card">
+    <div className="w-full h-60 bg-neutral-50 rounded shadow-card">
       <div className="p-6">
         <div className="flex items-center mb-6">
           <div className="mr-4">{icon}</div>
