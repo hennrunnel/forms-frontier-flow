@@ -13,7 +13,7 @@ const Tabs: React.FC<TabsProps> = ({
   activeTab,
   onTabChange
 }) => {
-  return <div className="flex border-b border-zinc-100 mx-8">
+  return <div className="flex border-b border-zinc-100 mx-0 px-8">
       {items.map(item => <div key={item.id} className="relative cursor-pointer px-4" onClick={() => onTabChange(item.id)}>
           <div className="py-4">
             <span className={`text-sm font-medium leading-normal ${activeTab === item.id ? 'text-brand-primary-blue' : 'text-black'}`}>
