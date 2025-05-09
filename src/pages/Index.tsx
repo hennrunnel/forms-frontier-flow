@@ -29,7 +29,7 @@ const Index = () => {
   }];
   return <div className="min-h-screen bg-neutral-50">
       
-      <PageTitle title="Forms" subtitle="Finn & Cross" onBack={() => console.log('Go back')} />
+      <PageTitle title="Forms" onBack={() => console.log('Go back')} />
       
       <div className="container mx-auto px-6">
         <div className="bg-white rounded shadow-card max-w-[992px] mx-auto">
