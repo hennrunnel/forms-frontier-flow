@@ -18,7 +18,7 @@ const Tabs: React.FC<TabsProps> = ({ items, activeTab, onTabChange }) => {
       {items.map((item, index) => (
         <div 
           key={item.id}
-          className={`relative cursor-pointer ${index === 0 ? 'pl-8' : 'px-4'}`}
+          className={`relative cursor-pointer px-4`}
           onClick={() => onTabChange(item.id)}
         >
           <div className="py-4">
